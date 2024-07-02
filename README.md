@@ -9,7 +9,8 @@ To run this project you will need to install the following dependancies
    Installation: [Download mysql](https://dev.mysql.com/downloads/installer/)
 2. **NodeJs** -
    Installation: [Download nodejs](https://nodejs.org/en/download/package-manager)
-3. **Laravel**
+3. **Laravel** 
+ ![Laravel Logo](https://laravel.com/img/logomark.min.svg)
    Installation:  [Download Laravel](https://laravel.com/docs/11.x/installation)
 4. **Node Package Manager**(NPM)
    Installation [NPM](https://www.npmjs.com/)
