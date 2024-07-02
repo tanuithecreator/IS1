@@ -6,16 +6,19 @@ Foodshare is a web-based platform designed to facilitate the donation of items t
 To run this project you will need to install the following dependancies
 
 1. **MySQL** - Serves as Database
-   - Installation: [Download mysql](https://dev.mysql.com/downloads/installer/)
-2. **NodeJs** -
-   - Installation: [Download nodejs](https://nodejs.org/en/download/package-manager)
+-![MySQL Logo](https://www.mysql.com/common/logos/logo-mysql-170x115.png)
+    Installation: [Download mysql](https://dev.mysql.com/downloads/installer/)
+2. **NodeJs** 
+   - ![Node.js Logo](https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png)
+   Installation: [Download nodejs](https://nodejs.org/en/download/package-manager)
 3. **Laravel** 
  - ![Laravel Logo](https://laravel.com/img/logomark.min.svg)
    Installation:  [Download Laravel](https://laravel.com/docs/11.x/installation)
 4. **Node Package Manager**(NPM)
   -  Installation [NPM](https://www.npmjs.com/)
 5. **Composer** - Dependancy manager for PHP
-  - Installation [Composer](https://getcomposer.org/) 
+- ![Composer Logo](https://getcomposer.org/img/logo-composer-transparent5.png)
+  Installation [Composer](https://getcomposer.org/) 
 
 
 ## Installation
