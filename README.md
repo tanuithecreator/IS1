@@ -9,7 +9,7 @@ To run this project you will need to install the following dependancies
 - ![MySQL Logo](https://www.mysql.com/common/logos/logo-mysql-170x115.png)
     Installation: [Download mysql](https://dev.mysql.com/downloads/installer/)
 2. **NodeJs** 
-   Installation: [Download nodejs](https://nodejs.org/en/download/package-manager)
+   - Installation: [Download nodejs](https://nodejs.org/en/download/package-manager)
 3. **Laravel** 
  - ![Laravel Logo](https://laravel.com/img/logomark.min.svg)
    Installation:  [Download Laravel](https://laravel.com/docs/11.x/installation)
