@@ -1,4 +1,4 @@
-#**FoodShare: A web based Donation Application**
+# **FoodShare: A web based Donation Application**
 ## Description 
 Foodshare is a web-based platform designed to facilitate the donation of items to those in need.Foodshare ensures transparency, traceability, and accountability in the donation process. The platform connects donors with recipients through a user-friendly interface that leverages geolocation services and matching algorithms to optimize the donation process.
 
