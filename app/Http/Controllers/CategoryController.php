@@ -7,60 +7,88 @@ use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
-
+    /**
+     * Display a listing of the resource.
+     */
     public function index()
     {
-             // Fetch all categories from the database
-             $categories = Category::all();
-
-             // Pass the categories to the view
-             return view('category.index', compact('categories'));
+        $categories = Category::paginate(10);
+        return view('admin.category.index', [
+            'categories' => $categories
+        ]);
     }
+
+    /**
+     * Show the form for creating a new resource.
+     */
     public function create()
     {
-        // Method to show the form to create a new category
-        return view('category.create');
+        return view('admin.category.create');
     }
 
+    /**
+     * Store a newly created resource in storage.
+     */
     public function store(Request $request)
     {
-        // Method to store a newly created category
-        $validatedData = $request->validate([
-            'item' => 'required|max:255',
-            'description' => 'nullable',
-            'location' => 'nullable|max:255',
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'description' => 'required|string|max:255',
+            'status' => 'nullable',
         ]);
 
-        Category::create($validatedData);
+        Category::create([
+            'name' => $request->name,
+            'description' => $request->description,
+            'status' => $request->status == true ? 1:0,
+        ]);
 
-        return redirect()->route('cause');
+        return redirect('category')->with('status','Category Created Successfully');
     }
 
+    /**
+     * Display the specified resource.
+     */
+    public function show(Category $category)
+    {
+        return view('admin.category.show', compact('category'));
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     */
     public function edit(Category $category)
     {
-        // Method to show the form to edit a category
-        return view('categories.edit', compact('category'));
+        return view('admin.category.edit', compact('category'));
     }
 
+    /**
+     * Update the specified resource in storage.
+     */
     public function update(Request $request, Category $category)
     {
-        // Method to update the specified category
-        $validatedData = $request->validate([
-            'name' => 'required|max:255',
-            'description' => 'nullable',
-            'location' => 'nullable|max:255',
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'description' => 'required|string|max:255',
+            'status' => 'nullable',
         ]);
 
-        $category->update($validatedData);
+        $category->update([
+            'name' => $request->name,
+            'description' => $request->description,
+            'status' => $request->status == true ? 1:0,
+        ]);
 
-        return redirect()->route('');
+        return redirect('category')->with('status','Category Updated Successfully');
     }
 
-    public function destroy($id)
-{
-    $categories = Categories::findOrFail($id);
-    $categories->delete();
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(Category $category)
+    {
+        $category->delete();
+        return redirect('category')->with('status','Category Deleted Successfully');
 
-    return redirect()->route('category.index')->with('success', 'Donation deleted successfully!');
-}
+    }
 }
