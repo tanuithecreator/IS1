@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Category;
 
 class CauseController extends Controller
 {
@@ -10,4 +11,7 @@ class CauseController extends Controller
     {
         return view('cause');
     }
+  
+  
+    
 }

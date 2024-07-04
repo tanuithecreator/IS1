@@ -13,17 +13,17 @@
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/themify-icons.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/nice-select.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/flaticon.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/gijgo.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/slicknav.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/themify-icons.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/nice-select.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/flaticon.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/gijgo.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/animate.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/slicknav.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css',true) }}">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -531,12 +531,12 @@
                                 Services
                             </h3>
                             <ul class="links">
-                                <li><a href="#">Donate</a></li>
-                                <li><a href="#">Sponsor</a></li>
-                                <li><a href="#">Fundraise</a></li>
-                                <li><a href="#">Volunteer</a></li>
-                                <li><a href="#">Partner</a></li>
-                                <li><a href="#">Jobs</a></li>
+                                <li><a href="{{ route('cause')}}">Donate</a></li>
+                                
+                                <li><a href="{{ route('cause')}}">Fundraise</a></li>
+                                <li><a href="{{ route('cause')}}">Volunteer</a></li>
+                            
+                                <li><a href="{{ route('contact')}}">Jobs</a></li>
                             </ul>
                         </div>
                     </div>
@@ -600,9 +600,8 @@
                     <div class="bordered_1px "></div>
                     <div class="col-xl-12">
                         <p class="copy_right text-center">
-                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                            <p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</p>
                         </p>
                     </div>
                 </div>
@@ -614,30 +613,28 @@
     <!-- JS here -->
     <script src="{{ asset('assets/vendor/js/vendor/modernizr-3.5.0.min.js') }}"></script>
     <script src="{{ asset('assets/vendor/js/vendor/jquery-1.12.4.min.js') }}"></script>
-    <script src="{{ asset('assets/js/popper.min.js') }}"></script>
-    <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('assets/js/isotope.pkgd.min.js') }}"></script>
-    <script src="{{ asset('assets/js/ajax-form.js') }}"></script>
-    <script src="{{ asset('assets/js/waypoints.min.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.counterup.min.js') }}"></script>
-    <script src="{{ asset('assets/js/imagesloaded.pkgd.min.js') }}"></script>
-    <script src="{{ asset('assets/js/scrollIt.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.scrollUp.min.js') }}"></script>
-    <script src="{{ asset('assets/js/wow.min.js') }}"></script>
-    <script src="{{ asset('assets/js/nice-select.min.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.slicknav.min.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
-    <script src="{{ asset('assets/js/plugins.js') }}"></script>
-    <script src="{{ asset('assets/js/gijgo.min.js') }}"></script>
-    <script src="{{ asset('assets/js/contact.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.ajaxchimp.min.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.form.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.validate.min.js') }}"></script>
-    <script src="{{ asset('assets/js/mail-script.js') }}"></script>
-    <script src="{{ asset('assets/js/main.js') }}"></script>
-
-    <script src="js/main.js"></script>
+    <script src="{{ asset('assets/js/popper.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/bootstrap.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/owl.carousel.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/isotope.pkgd.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/ajax-form.js',true) }}"></script>
+    <script src="{{ asset('assets/js/waypoints.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/jquery.counterup.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/imagesloaded.pkgd.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/scrollIt.js',true) }}"></script>
+    <script src="{{ asset('assets/js/jquery.scrollUp.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/wow.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/nice-select.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/jquery.slicknav.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/jquery.magnific-popup.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/plugins.js',true) }}"></script>
+    <script src="{{ asset('assets/js/gijgo.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/contact.js',true) }}"></script>
+    <script src="{{ asset('assets/js/jquery.ajaxchimp.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/jquery.form.js',true) }}"></script>
+    <script src="{{ asset('assets/js/jquery.validate.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/mail-script.js',true) }}"></script>
+    <script src="{{ asset('assets/js/main.js',true) }}"></script>
     <script>
         $('.datepicker').datepicker({
             iconsLibrary: 'fontawesome',

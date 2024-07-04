@@ -14,17 +14,18 @@
 
     <!-- CSS here -->
 
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/themify-icons.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/nice-select.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/flaticon.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/gijgo.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/slicknav.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/themify-icons.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/nice-select.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/flaticon.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/gijgo.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/animate.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/slicknav.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/responsive.css',true) }}">
 
 
 <body>
@@ -37,8 +38,8 @@
                         <div class="col-xl-6 col-md-12 col-lg-8">
                             <div class="short_contact_list">
                                 <ul>
-                                    <li><a href="#"> <i class="fa fa-phone"></i> +254 717302004</a></li>
-                                    <li><a href="#"> <i class="fa fa-envelope"></i>FoodShare@gmail.com</a></li>
+                                    <li><a href="{{route('contact')}}"> <i class="fa fa-phone"></i> +254 717302004</a></li>
+                                    <li><a href=""> <i class="fa fa-envelope"></i>FoodShare@gmail.com</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -49,7 +50,7 @@
                     <div class="row align-items-center">
                         <div class="col-xl-3 col-lg-3">
                             <div class="logo">
-                                <a href="index.html">
+                                <a href="{{ route('home') }}" >
                                     <img src="img/logo.png" alt="">
                                 </a>
                             </div>
@@ -150,7 +151,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section_title text-center mb-55">
-                        <h3><span></span></h3>
+                        <h3><span>CARE TO HELP OUT?</span></h3>
                     </div>
                 </div>
             </div>
@@ -159,7 +160,7 @@
                     <div class="single_reson">
                         <div class="thum">
                             <div class="thum_1">
-                                <img src="img/help/1.png" alt="">
+                                <img src="{{ asset('assets/images/help/1.png') }}" alt="">
                             </div>
                         </div>
                         <div class="help_content">
@@ -173,14 +174,12 @@
                     <div class="single_reson">
                         <div class="thum">
                             <div class="thum_1">
-                                <img src="img/help/2.png" alt="">
+                                <img src="{{ asset('assets/images/help/2.png') }}" alt="">
                             </div>
                         </div>
                         <div class="help_content">
-                            <h4>Blood Camp</h4>
-                            <p>Lorem ipsum, or lipsum as it is 
-                                sometimes known, is dummy 
-                                text used in laying out print.</p>
+                            <h4>Food Banks</h4>
+                            <p>Food banks combat hunger by distributing donated and purchased food supplies.</p>
                             <a href="{{ route('cause') }}" class="read_more">Read More</a>
                         </div>
                     </div>
@@ -189,14 +188,12 @@
                     <div class="single_reson">
                         <div class="thum">
                             <div class="thum_1">
-                                <img src="img/help/3.png" alt="">
+                                <img src="{{ asset('assets/images/help/3.png') }}" alt="">
                             </div>
                         </div>
                         <div class="help_content">
-                            <h4>Friendly Volunteer</h4>
-                            <p>Lorem ipsum, or lipsum as it is 
-                                sometimes known, is dummy 
-                                text used in laying out print.</p>
+                            <h4>Join and Volunteer</h4>
+                            <p>By joining us, you become part of a compassionate team dedicated to providing food and hope to our community.</p>
                             <a href="{{ route('cause') }}" class="read_more">Read More</a>
                         </div>
                     </div>
@@ -222,7 +219,7 @@
                                 Activities</h3>
                         </div>
                         <p class="para_1">At FoodShare, our activities are centered around creating a seamless and effective platform for food donation to combat food waste and support those in need. We enable individuals and businesses with surplus food to list their donations through our user-friendly web application, making it accessible for recipients like charities, food banks, and needy families to search and request these donations. Our system supports registration, donation management, and secure communication between donors and recipients, ensuring transparency and efficiency. Admins oversee the platform, maintaining user accounts, monitoring activities, and generating insightful reports to continually enhance our service. Through these efforts, we foster a community-driven approach to reducing food waste and improving food security, connecting generous donors with recipients who need it the most.</p>
-                        <a href="#" data-scroll-nav='1' class="boxed-btn4">Donate Now</a>
+                        <a href="{{route('cause')}}" data-scroll-nav='1' class="boxed-btn4">Donate Now</a>
                     </div>
                 </div>
             </div>
@@ -230,283 +227,7 @@
     </div>
     <!-- latest_activites_area_end  -->
 
-    <!-- popular_causes_area_start  -->
-    <div class="popular_causes_area section_padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section_title text-center mb-55">
-                        <h3><span>Popular Causes</span></h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="causes_active owl-carousel">
-                        <div class="single_cause">
-                            <div class="thumb">
-                                <img src="img/causes/1.png" alt="">
-                            </div>
-                            <div class="causes_content">
-                                <div class="custom_progress_bar">
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                                            <span class="progres_count">
-                                                30%
-                                            </span>
-                                        </div>
-                                      </div>
-                                </div>
-                                <div class="balance d-flex justify-content-between align-items-center">
-                                    <span>Raised: $5000.00 </span>
-                                    <span>Goal: $9000.00 </span>
-                                </div>
-                                <h4>Help us to Send Food</h4>
-                                <p>The passage is attributed to an 
-                                    unknown typesetter in the century 
-                                    who is thought</p>
-                                <a class="read_more" href="cause_details.html">Read More</a>
-                            </div>
-                        </div>
-                        <div class="single_cause">
-                            <div class="thumb">
-                                <img src="img/causes/2.png" alt="">
-                            </div>
-                            <div class="causes_content">
-                                <div class="custom_progress_bar">
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                                            <span class="progres_count">
-                                                30%
-                                            </span>
-                                        </div>
-                                      </div>
-                                </div>
-                                <div class="balance d-flex justify-content-between align-items-center">
-                                    <span>Raised: $5000.00 </span>
-                                    <span>Goal: $9000.00 </span>
-                                </div>
-                                <h4>Clothes For Everyone</h4>
-                                <p>The passage is attributed to an 
-                                    unknown typesetter in the century 
-                                    who is thought</p>
-                                <a class="read_more" href="cause_details.html">Read More</a>
-                            </div>
-                        </div>
-                        <div class="single_cause">
-                            <div class="thumb">
-                                <img src="img/causes/3.png" alt="">
-                            </div>
-                            <div class="causes_content">
-                                <div class="custom_progress_bar">
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                                            <span class="progres_count">
-                                                30%
-                                            </span>
-                                        </div>
-                                      </div>
-                                </div>
-                                <div class="balance d-flex justify-content-between align-items-center">
-                                    <span>Raised: $5000.00 </span>
-                                    <span>Goal: $9000.00 </span>
-                                </div>
-                                <h4>Water For All Children</h4>
-                                <p>The passage is attributed to an 
-                                    unknown typesetter in the century 
-                                    who is thought</p>
-                                <a class="read_more" href="cause_details.html">Read More</a>
-                            </div>
-                        </div>
-                        <div class="single_cause">
-                            <div class="thumb">
-                                <img src="img/causes/1.png" alt="">
-                            </div>
-                            <div class="causes_content">
-                                <div class="custom_progress_bar">
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                                            <span class="progres_count">
-                                                30%
-                                            </span>
-                                        </div>
-                                      </div>
-                                </div>
-                                <div class="balance d-flex justify-content-between align-items-center">
-                                    <span>Raised: $5000.00 </span>
-                                    <span>Goal: $9000.00 </span>
-                                </div>
-                                <h4>Help us to Send Food</h4>
-                                <p>The passage is attributed to an 
-                                    unknown typesetter in the century 
-                                    who is thought</p>
-                                <a class="read_more" href="cause_details.html">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- popular_causes_area_end  -->
 
-    <!-- counter_area_start  -->
-    <div class="counter_area">
-        <div class="container">
-            <div class="counter_bg overlay">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single_counter d-flex align-items-center justify-content-center">
-                            <div class="icon">
-                                <i class="flaticon-calendar"></i>
-                            </div>
-                            <div class="events">
-                                <h3 class="counter">120</h3>
-                                <p>Finished Event</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single_counter d-flex align-items-center justify-content-center">
-                            <div class="icon">
-                                <i class="flaticon-heart-beat"></i>
-                            </div>
-                            <div class="events">
-                                <h3 class="counter">120</h3>
-                                <p>Finished Event</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single_counter d-flex align-items-center justify-content-center">
-                            <div class="icon">
-                                <i class="flaticon-in-love"></i>
-                            </div>
-                            <div class="events">
-                                <h3 class="counter">120</h3>
-                                <p>Finished Event</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single_counter d-flex align-items-center justify-content-center">
-                            <div class="icon">
-                                <i class="flaticon-hug"></i>
-                            </div>
-                            <div class="events">
-                                <h3 class="counter">120</h3>
-                                <p>Finished Event</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- counter_area_end  -->
-
-    <!-- our_volunteer_area_start  -->
-    <div class="our_volunteer_area section_padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section_title text-center mb-55">
-                        <h3><span>Our Volunteer</span></h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_volenteer">
-                        <div class="volenteer_thumb">
-                            <img src="img/volenteer/1.png" alt="">
-                        </div>
-                        <div class="voolenteer_info d-flex align-items-end">
-                            <div class="social_links">
-                                <ul>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-facebook"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-pinterest"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-linkedin"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-twitter"></i> </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="info_inner">
-                                <h4>Sakil khan</h4>
-                                <p>Donner</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_volenteer">
-                        <div class="volenteer_thumb">
-                            <img src="img/volenteer/2.png" alt="">
-                        </div>
-                        <div class="voolenteer_info d-flex align-items-end">
-                            <div class="social_links">
-                                <ul>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-facebook"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-pinterest"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-linkedin"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-twitter"></i> </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="info_inner">
-                                <h4>Emran Ahmed</h4>
-                                <p>Volunteer</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_volenteer">
-                        <div class="volenteer_thumb">
-                            <img src="img/volenteer/3.png" alt="">
-                        </div>
-                        <div class="voolenteer_info d-flex align-items-end">
-                            <div class="social_links">
-                                <ul>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-facebook"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-pinterest"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-linkedin"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-twitter"></i> </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="info_inner">
-                                <h4>Sabbir Ahmed</h4>
-                                <p>Volunteer</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- our_volunteer_area_end  -->
 
     <!-- news__area_start  -->
     <div class="news__area section_padding">
@@ -523,11 +244,11 @@
                     <div class="news_active owl-carousel">
                         <div class="single__blog d-flex align-items-center">
                             <div class="thum">
-                                <img src="img/news/1.png" alt="">
+                                <img src="{{asset('assets/images/news/news_1.png')}}"  alt="">
                             </div>
                             <div class="newsinfo">
                                 <span>July 18, 2019</span>
-                                <a href="single-blog.html">
+                                <a href="{{route('blog')}}">
                                     <h3>Pure Water Is More 
                                         Essential</h3>
                                 </a>
@@ -535,16 +256,16 @@
                                     surge in popularity during the 
                                     1960s when used it on their  
                                     sheets, and again.</p>
-                                <a class="read_more" href="single-blog.html">Read More</a>
+                                <a class="read_more" href="{{route('blog')}}">Read More</a>
                             </div>
                         </div>
                         <div class="single__blog d-flex align-items-center">
                             <div class="thum">
-                                <img src="img/news/2.png" alt="">
+                                <img src="{{asset('assets/images/news/news_2.png')}}"  alt="">
                             </div>
                             <div class="newsinfo">
                                 <span>July 18, 2019</span>
-                                <a href="single-blog.html">
+                                <a href="{{route('blog')}}">
                                     <h3>Pure Water Is More 
                                         Essential</h3>
                                 </a>
@@ -552,7 +273,7 @@
                                     surge in popularity during the 
                                     1960s when used it on their  
                                     sheets, and again.</p>
-                                <a class="read_more" href="single-blog.html">Read More</a>
+                                <a class="read_more" href="{{route('blog')}}">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -581,9 +302,9 @@
                                     <div class="input_field">
                                         <div class="input-group">
                                             <div class="input-group-prepend">
-                                              <span class="input-group-text" id="basic-addon1">$</span>
+                                              <span class="input-group-text" id="basic-addon1">Ksh</span>
                                             </div>
-                                            <input type="text" class="form-control" placeholder="40,200" aria-label="Username" aria-describedby="basic-addon1">
+                                            <input type="text" class="form-control" placeholder="0.00" aria-label="Username" aria-describedby="basic-addon1">
                                           </div>
                                     </div>
                                 </div>
@@ -671,12 +392,12 @@
                                 Services
                             </h3>
                             <ul class="links">
-                                <li><a href="#">Donate</a></li>
-                                <li><a href="#">Sponsor</a></li>
-                                <li><a href="#">Fundraise</a></li>
-                                <li><a href="#">Volunteer</a></li>
-                                <li><a href="#">Partner</a></li>
-                                <li><a href="#">Jobs</a></li>
+                                <li><a href="{{ route('cause')}}">Donate</a></li>
+                                
+                                <li><a href="{{ route('cause')}}">Fundraise</a></li>
+                                <li><a href="{{ route('cause')}}">Volunteer</a></li>
+                            
+                                <li><a href="{{ route('contact')}}">Jobs</a></li>
                             </ul>
                         </div>
                     </div>
@@ -703,7 +424,7 @@
                                 <li>
                                     <div class="thumb">
                                         <a href="#">
-                                            <img src="img/news/news_1.png" alt="">
+                                            <img src="{{asset('assets/images/news/news_1.png')}}"  alt="">
                                         </a>
                                     </div>
                                     <div class="info">
@@ -717,7 +438,7 @@
                                 <li>
                                     <div class="thumb">
                                         <a href="#">
-                                            <img src="img/news/news_2.png" alt="">
+                                            <img src="{{asset('assets/images/news/news_2.png')}}" alt="">
                                         </a>
                                     </div>
                                     <div class="info">
@@ -758,28 +479,28 @@
     
     <script src="{{ asset('assets/vendor/js/vendor/modernizr-3.5.0.min.js') }}"></script>
     <script src="{{ asset('assets/vendor/js/vendor/jquery-1.12.4.min.js') }}"></script>
-    <script src="{{ asset('assets/js/popper.min.js') }}"></script>
-    <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('assets/js/isotope.pkgd.min.js') }}"></script>
-    <script src="{{ asset('assets/js/ajax-form.js') }}"></script>
-    <script src="{{ asset('assets/js/waypoints.min.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.counterup.min.js') }}"></script>
-    <script src="{{ asset('assets/js/imagesloaded.pkgd.min.js') }}"></script>
-    <script src="{{ asset('assets/js/scrollIt.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.scrollUp.min.js') }}"></script>
-    <script src="{{ asset('assets/js/wow.min.js') }}"></script>
-    <script src="{{ asset('assets/js/nice-select.min.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.slicknav.min.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
-    <script src="{{ asset('assets/js/plugins.js') }}"></script>
-    <script src="{{ asset('assets/js/gijgo.min.js') }}"></script>
-    <script src="{{ asset('assets/js/contact.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.ajaxchimp.min.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.form.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.validate.min.js') }}"></script>
-    <script src="{{ asset('assets/js/mail-script.js') }}"></script>
-    <script src="{{ asset('assets/js/main.js') }}"></script>
+    <script src="{{ asset('assets/js/popper.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/bootstrap.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/owl.carousel.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/isotope.pkgd.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/ajax-form.js',true) }}"></script>
+    <script src="{{ asset('assets/js/waypoints.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/jquery.counterup.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/imagesloaded.pkgd.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/scrollIt.js',true) }}"></script>
+    <script src="{{ asset('assets/js/jquery.scrollUp.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/wow.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/nice-select.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/jquery.slicknav.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/jquery.magnific-popup.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/plugins.js',true) }}"></script>
+    <script src="{{ asset('assets/js/gijgo.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/contact.js',true) }}"></script>
+    <script src="{{ asset('assets/js/jquery.ajaxchimp.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/jquery.form.js',true) }}"></script>
+    <script src="{{ asset('assets/js/jquery.validate.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/mail-script.js',true) }}"></script>
+    <script src="{{ asset('assets/js/main.js',true) }}"></script>
 </body>
 </html>
 

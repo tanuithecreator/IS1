@@ -13,17 +13,17 @@
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/themify-icons.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/nice-select.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/flaticon.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/gijgo.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/slicknav.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/themify-icons.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/nice-select.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/flaticon.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/gijgo.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/animate.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/slicknav.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css',true) }}">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -152,7 +152,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="bradcam_text text-center">
-                        <h3>About US</h3>
+                        <h3>Who are we?</h3>
                     </div>
                 </div>
             </div>
@@ -160,13 +160,13 @@
     </div>
     <!-- bradcam_area_end  -->
 
-    <!-- reson_area_start  -->
-    <div class="reson_area section_padding">
+     <!-- reson_area_start  -->
+     <div class="reson_area section_padding">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section_title text-center mb-55">
-                        <h3><span>Reason of Helping</span></h3>
+                        <h3><span>HOW TO HELP</span></h3>
                     </div>
                 </div>
             </div>
@@ -175,15 +175,13 @@
                     <div class="single_reson">
                         <div class="thum">
                             <div class="thum_1">
-                                <img src="img/help/1.png" alt="">
+                                <img src="{{ asset('assets/images/help/1.png') }}" alt="">
                             </div>
                         </div>
                         <div class="help_content">
                             <h4>Collecting Fund</h4>
-                            <p>Lorem ipsum, or lipsum as it is 
-                                sometimes known, is dummy 
-                                text used in laying out print.</p>
-                            <a href="#" class="read_more">Read More</a>
+                            <p>Financial contributions help us cover operational costs and expand our reach.Every Shilling goes directly towards feeding our community.</p>
+                            <a href="{{ route('cause') }}" class="read_more">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -191,15 +189,13 @@
                     <div class="single_reson">
                         <div class="thum">
                             <div class="thum_1">
-                                <img src="img/help/2.png" alt="">
+                                <img src="{{ asset('assets/images/help/2.png') }}" alt="">
                             </div>
                         </div>
                         <div class="help_content">
-                            <h4>Collecting Fund</h4>
-                            <p>Lorem ipsum, or lipsum as it is 
-                                sometimes known, is dummy 
-                                text used in laying out print.</p>
-                            <a href="#" class="read_more">Read More</a>
+                            <h4>Food Banks</h4>
+                            <p>Food banks combat hunger by distributing donated and purchased food supplies.</p>
+                            <a href="{{ route('cause') }}" class="read_more">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -207,15 +203,13 @@
                     <div class="single_reson">
                         <div class="thum">
                             <div class="thum_1">
-                                <img src="img/help/3.png" alt="">
+                                <img src="{{ asset('assets/images/help/3.png') }}" alt="">
                             </div>
                         </div>
                         <div class="help_content">
-                            <h4>Collecting Fund</h4>
-                            <p>Lorem ipsum, or lipsum as it is 
-                                sometimes known, is dummy 
-                                text used in laying out print.</p>
-                            <a href="#" class="read_more">Read More</a>
+                            <h4>Join and Volunteer</h4>
+                            <p>By joining us, you become part of a compassionate team dedicated to providing food and hope to our community.</p>
+                            <a href="{{ route('cause') }}" class="read_more">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -432,7 +426,7 @@
                                     <div class="input_field">
                                         <div class="input-group">
                                             <div class="input-group-prepend">
-                                              <span class="input-group-text" id="basic-addon1">$</span>
+                                              <span class="input-group-text" id="basic-addon1">Ksh</span>
                                             </div>
                                             <input type="text" class="form-control" placeholder="40,200" aria-label="Username" aria-describedby="basic-addon1">
                                           </div>
@@ -522,12 +516,12 @@
                                 Services
                             </h3>
                             <ul class="links">
-                                <li><a href="#">Donate</a></li>
-                                <li><a href="#">Sponsor</a></li>
-                                <li><a href="#">Fundraise</a></li>
-                                <li><a href="#">Volunteer</a></li>
-                                <li><a href="#">Partner</a></li>
-                                <li><a href="#">Jobs</a></li>
+                                <li><a href="{{ route('cause')}}">Donate</a></li>
+                                
+                                <li><a href="{{ route('cause')}}">Fundraise</a></li>
+                                <li><a href="{{ route('cause')}}">Volunteer</a></li>
+                            
+                                <li><a href="{{ route('contact')}}">Jobs</a></li>
                             </ul>
                         </div>
                     </div>
@@ -591,9 +585,8 @@
                     <div class="bordered_1px "></div>
                     <div class="col-xl-12">
                         <p class="copy_right text-center">
-                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                            <p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
                         </p>
                     </div>
                 </div>
@@ -607,30 +600,28 @@
     <!-- JS here -->
     <script src="{{ asset('assets/vendor/js/vendor/modernizr-3.5.0.min.js') }}"></script>
     <script src="{{ asset('assets/vendor/js/vendor/jquery-1.12.4.min.js') }}"></script>
-    <script src="{{ asset('assets/js/popper.min.js') }}"></script>
-    <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('assets/js/isotope.pkgd.min.js') }}"></script>
-    <script src="{{ asset('assets/js/ajax-form.js') }}"></script>
-    <script src="{{ asset('assets/js/waypoints.min.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.counterup.min.js') }}"></script>
-    <script src="{{ asset('assets/js/imagesloaded.pkgd.min.js') }}"></script>
-    <script src="{{ asset('assets/js/scrollIt.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.scrollUp.min.js') }}"></script>
-    <script src="{{ asset('assets/js/wow.min.js') }}"></script>
-    <script src="{{ asset('assets/js/nice-select.min.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.slicknav.min.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
-    <script src="{{ asset('assets/js/plugins.js') }}"></script>
-    <script src="{{ asset('assets/js/gijgo.min.js') }}"></script>
-    <script src="{{ asset('assets/js/contact.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.ajaxchimp.min.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.form.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.validate.min.js') }}"></script>
-    <script src="{{ asset('assets/js/mail-script.js') }}"></script>
-    <script src="{{ asset('assets/js/main.js') }}"></script>
-
-    <script src="js/main.js"></script>
+    <script src="{{ asset('assets/js/popper.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/bootstrap.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/owl.carousel.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/isotope.pkgd.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/ajax-form.js',true) }}"></script>
+    <script src="{{ asset('assets/js/waypoints.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/jquery.counterup.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/imagesloaded.pkgd.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/scrollIt.js',true) }}"></script>
+    <script src="{{ asset('assets/js/jquery.scrollUp.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/wow.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/nice-select.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/jquery.slicknav.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/jquery.magnific-popup.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/plugins.js',true) }}"></script>
+    <script src="{{ asset('assets/js/gijgo.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/contact.js',true) }}"></script>
+    <script src="{{ asset('assets/js/jquery.ajaxchimp.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/jquery.form.js',true) }}"></script>
+    <script src="{{ asset('assets/js/jquery.validate.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/mail-script.js',true) }}"></script>
+    <script src="{{ asset('assets/js/main.js',true) }}"></script>
 </body>
 
 </html>

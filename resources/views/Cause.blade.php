@@ -13,17 +13,17 @@
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/themify-icons.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/nice-select.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/flaticon.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/gijgo.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/slicknav.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/themify-icons.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/nice-select.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/flaticon.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/gijgo.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/animate.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/slicknav.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css',true) }}">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -167,7 +167,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single_cause">
                         <div class="thumb">
-                            <img src="img/causes/1.png" alt="">
+                            <img src="{{asset('assets/images/causes/1.png')}}" alt="">
                         </div>
                         <div class="causes_content">
                             <div class="custom_progress_bar">
@@ -183,18 +183,16 @@
                                 <span>Raised: $5000.00 </span>
                                 <span>Goal: $9000.00 </span>
                             </div>
-                            <a href="cause_details.html"><h4>Help us to Send Food</h4></a>
-                            <p>The passage is attributed to an 
-                                unknown typesetter in the century 
-                                who is thought</p>
-                            <a class="read_more" href="cause_details.html">Read More</a>
+                            <a href="{{route('food')}}"><h4>Help us to Send Food</h4></a>
+                            <p></p>
+                            <a class="read_more" href="{{route('food')}}">Read More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single_cause">
                         <div class="thumb">
-                            <img src="img/causes/2.png" alt="">
+                            <img src="{{asset('assets/images/causes/2.png')}}" alt="">
                         </div>
                         <div class="causes_content">
                             <div class="custom_progress_bar">
@@ -207,126 +205,96 @@
                                   </div>
                             </div>
                             <div class="balance d-flex justify-content-between align-items-center">
-                                <span>Raised: $5000.00 </span>
-                                <span>Goal: $9000.00 </span>
+                                <span>Raised: Ksh5000.00 </span>
+                                <span>Goal: Ksh9000.00 </span>
                             </div>
-                            <a href="cause_details.html"> <h4>Clothes For Everyone</h4></a>
-                            <p>The passage is attributed to an 
-                                unknown typesetter in the century 
-                                who is thought</p>
-                            <a class="read_more" href="cause_details.html">Read More</a>
+                            <a href="{{route('clothes')}}"> <h4>Clothes For Everyone</h4></a>
+                            <p></p>
+                            <a class="read_more" href="{{route('clothes')}}">Read More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single_cause">
                         <div class="thumb">
-                            <img src="img/causes/3.png" alt="">
+                            <img src="{{asset('assets/images/causes/3.png')}}"alt="">
                         </div>
                         <div class="causes_content">
                             <div class="custom_progress_bar">
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
                                         <span class="progres_count">
-                                            30%
+                                            20%
                                         </span>
                                     </div>
                                   </div>
                             </div>
                             <div class="balance d-flex justify-content-between align-items-center">
-                                <span>Raised: $5000.00 </span>
-                                <span>Goal: $9000.00 </span>
+                                <span>Raised: Ksh5000.00 </span>
+                                <span>Goal: Ksh9000.00 </span>
                             </div>
-                            <a href="cause_details.html"> <h4>Water For All Children</h4></a>
+                            <a href="{{route('edu')}}"> <h4>Educational Support</h4></a>
                            
-                            <p>The passage is attributed to an 
-                                unknown typesetter in the century 
-                                who is thought</p>
-                            <a class="read_more" href="cause_details.html">Read More</a>
+                            <p></p>
+                            <a class="read_more" href="{{route('edu')}}">Read More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single_cause">
                         <div class="thumb">
-                            <img src="img/causes/4.png" alt="">
+                            <img src="{{asset('assets/images/causes/4.png')}}"alt="">
                         </div>
                         <div class="causes_content">
                             <div class="custom_progress_bar">
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
                                         <span class="progres_count">
-                                            30%
+                                            50%
                                         </span>
                                     </div>
                                   </div>
                             </div>
                             <div class="balance d-flex justify-content-between align-items-center">
-                                <span>Raised: $5000.00 </span>
-                                <span>Goal: $9000.00 </span>
+                                <span>Raised: Ksh 17000.00 </span>
+                                <span>Goal: Ksh 90000.00 </span>
                             </div>
-                            <a href="cause_details.html"><h4>Help us to Send Food</h4></a>
+                            <a href="{{route('relief')}}"><h4>Disaster Relief</h4></a>
                             
-                            <p>The passage is attributed to an 
-                                unknown typesetter in the century 
-                                who is thought</p>
-                            <a class="read_more" href="cause_details.html">Read More</a>
+                            <p></p>
+                            <a class="read_more" href="{{route('relief')}}">Read More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single_cause">
                         <div class="thumb">
-                            <img src="img/causes/5.png" alt="">
+                            <img src="{{asset('assets/images/causes/5.png')}}" alt="">
                         </div>
                         <div class="causes_content">
                             <div class="custom_progress_bar">
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
                                         <span class="progres_count">
-                                            30%
+                                            72%
                                         </span>
                                     </div>
                                   </div>
                             </div>
                             <div class="balance d-flex justify-content-between align-items-center">
-                                <span>Raised: $5000.00 </span>
-                                <span>Goal: $9000.00 </span>
+                                <span>Raised: Ksh 30000.00 </span>
+                                <span>Goal: Ksh 52000.00 </span>
                             </div>
-                            <a href="cause_details.html"><h4>Clothes For Everyone</h4></a>
+                            <a href="{{route('volunteer')}}"><h4>Volunteer with Us</h4></a>
                             
-                            <p>The passage is attributed to an 
-                                unknown typesetter in the century 
-                                who is thought</p>
-                            <a class="read_more" href="cause_details.html">Read More</a>
+                            <p></p>
+                            <a class="read_more" href="{{route('volunteer')}}">Read More</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_cause">
-                        <div class="thumb">
-                            <img src="img/causes/6.png" alt="">
-                        </div>
-                        <div class="causes_content">
-                            <div class="custom_progress_bar">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                                        <span class="progres_count">
-                                            30%
-                                        </span>
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="balance d-flex justify-content-between align-items-center">
-                                <span>Raised: $5000.00 </span>
-                                <span>Goal: $9000.00 </span>
-                            </div>
-                            <a href="cause_details.html"><h4>Water For All Children</h4></a>
-                            
-                            <p>The passage is attributed to an 
-                                unknown typesetter in the century 
-                                who is thought</p>
-                            <a class="read_more" href="cause_details.html">Read More</a>
+               
+                            <p>                                       </p>
+                            <a class="read_more" href="cause_details.html"></a>
                         </div>
                     </div>
                 </div>
@@ -354,7 +322,7 @@
                                     <div class="input_field">
                                         <div class="input-group">
                                             <div class="input-group-prepend">
-                                              <span class="input-group-text" id="basic-addon1">$</span>
+                                              <span class="input-group-text" id="basic-addon1">Ksh</span>
                                             </div>
                                             <input type="text" class="form-control" placeholder="40,200" aria-label="Username" aria-describedby="basic-addon1">
                                           </div>
@@ -444,12 +412,12 @@
                                 Services
                             </h3>
                             <ul class="links">
-                                <li><a href="#">Donate</a></li>
-                                <li><a href="#">Sponsor</a></li>
-                                <li><a href="#">Fundraise</a></li>
-                                <li><a href="#">Volunteer</a></li>
-                                <li><a href="#">Partner</a></li>
-                                <li><a href="#">Jobs</a></li>
+                                <li><a href="{{ route('cause')}}">Donate</a></li>
+                                
+                                <li><a href="{{ route('cause')}}">Fundraise</a></li>
+                                <li><a href="{{ route('cause')}}">Volunteer</a></li>
+                            
+                                <li><a href="{{ route('contact')}}">Jobs</a></li>
                             </ul>
                         </div>
                     </div>
@@ -513,9 +481,9 @@
                     <div class="bordered_1px "></div>
                     <div class="col-xl-12">
                         <p class="copy_right text-center">
-                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                            <p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
+</p>
                         </p>
                     </div>
                 </div>
@@ -529,30 +497,28 @@
     <!-- JS here -->
     <script src="{{ asset('assets/vendor/js/vendor/modernizr-3.5.0.min.js') }}"></script>
     <script src="{{ asset('assets/vendor/js/vendor/jquery-1.12.4.min.js') }}"></script>
-    <script src="{{ asset('assets/js/popper.min.js') }}"></script>
-    <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('assets/js/isotope.pkgd.min.js') }}"></script>
-    <script src="{{ asset('assets/js/ajax-form.js') }}"></script>
-    <script src="{{ asset('assets/js/waypoints.min.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.counterup.min.js') }}"></script>
-    <script src="{{ asset('assets/js/imagesloaded.pkgd.min.js') }}"></script>
-    <script src="{{ asset('assets/js/scrollIt.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.scrollUp.min.js') }}"></script>
-    <script src="{{ asset('assets/js/wow.min.js') }}"></script>
-    <script src="{{ asset('assets/js/nice-select.min.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.slicknav.min.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
-    <script src="{{ asset('assets/js/plugins.js') }}"></script>
-    <script src="{{ asset('assets/js/gijgo.min.js') }}"></script>
-    <script src="{{ asset('assets/js/contact.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.ajaxchimp.min.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.form.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.validate.min.js') }}"></script>
-    <script src="{{ asset('assets/js/mail-script.js') }}"></script>
-    <script src="{{ asset('assets/js/main.js') }}"></script>
-
-    <script src="js/main.js"></script>
+    <script src="{{ asset('assets/js/popper.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/bootstrap.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/owl.carousel.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/isotope.pkgd.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/ajax-form.js',true) }}"></script>
+    <script src="{{ asset('assets/js/waypoints.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/jquery.counterup.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/imagesloaded.pkgd.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/scrollIt.js',true) }}"></script>
+    <script src="{{ asset('assets/js/jquery.scrollUp.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/wow.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/nice-select.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/jquery.slicknav.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/jquery.magnific-popup.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/plugins.js',true) }}"></script>
+    <script src="{{ asset('assets/js/gijgo.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/contact.js',true) }}"></script>
+    <script src="{{ asset('assets/js/jquery.ajaxchimp.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/jquery.form.js',true) }}"></script>
+    <script src="{{ asset('assets/js/jquery.validate.min.js',true) }}"></script>
+    <script src="{{ asset('assets/js/mail-script.js',true) }}"></script>
+    <script src="{{ asset('assets/js/main.js',true) }}"></script>
 </body>
 
 </html>

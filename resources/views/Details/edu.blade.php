@@ -8,9 +8,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- <link rel="manifest" href="site.webmanifest"> -->
+
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-    <!-- Place favicon.ico in the root directory -->
+ 
 
     <!-- CSS here -->
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css',true) }}">
@@ -24,7 +24,8 @@
     <link rel="stylesheet" href="{{ asset('assets/css/animate.css',true) }}">
     <link rel="stylesheet" href="{{ asset('assets/css/slicknav.css',true) }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css',true) }}">
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <link rel="stylesheet" href="{{ asset('assets/css/responsive.css',true) }}">
+
 </head>
 
 <body>
@@ -42,36 +43,19 @@
                         <div class="col-xl-6 col-md-12 col-lg-8">
                             <div class="short_contact_list">
                                 <ul>
-                                <li><a href="#"> <i class="fa fa-phone"></i> +254 717302004</a></li>
-                                <li><a href="#"> <i class="fa fa-envelope"></i>FoodShare@gmail.com</a></li>
+                                    <li><a href="{{route('contact')}}"> <i class="fa fa-phone"></i> +254 717302004</a></li>
+                                    <li><a href=""> <i class="fa fa-envelope"></i>FoodShare@gmail.com</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xl-6 col-md-6 col-lg-4">
-                            <div class="social_media_links d-none d-lg-block">
-                                <a href="#">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-pinterest-p"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                     
             </div>
             <div id="sticky-header" class="main-header-area">
                 <div class="container-fluid">
                     <div class="row align-items-center">
                         <div class="col-xl-3 col-lg-3">
                             <div class="logo">
-                                <a href="index.html">
+                                <a href="{{ route('home') }}" >
                                     <img src="img/logo.png" alt="">
                                 </a>
                             </div>
@@ -79,7 +63,7 @@
                         <div class="col-xl-9 col-lg-9">
                             <div class="main-menu">
                                 <nav>
-                                <ul id="navigation">
+                                    <ul id="navigation">
                                         <li><a href="{{ route('home') }}" > home</a></li>
                                         <li><a href="{{ route('about') }}"> About</a></li>
                                         
@@ -131,7 +115,7 @@
                                 </nav>
                                 <div class="Appointment">
                                     <div class="book_btn d-none d-lg-block">
-                                        <a data-scroll-nav='1' href="#">Make a Donation</a>
+                                        <a data-scroll-nav='1' href="#giveMoney">Make a Donation</a>
                                     </div>
                                 </div>
                             </div>
@@ -152,7 +136,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="bradcam_text text-center">
-                        <h3>Contact</h3>
+                        <h3>Donate towards Education</h3>
                     </div>
                 </div>
             </div>
@@ -160,112 +144,60 @@
     </div>
     <!-- bradcam_area_end  -->
 
-    <!-- ================ contact section start ================= -->
-    <section class="contact-section">
-            <div class="container">
-                <div class="d-none d-sm-block mb-5 pb-4">
-                    <div id="map" style="height: 480px; position: relative; overflow: hidden;"></div>
-                    <script>
-                        function initMap() {
-                            var uluru = {
-                                lat: -25.363,
-                                lng: 131.044
-                            };
-                            var grayStyles = [{
-                                    featureType: "all",
-                                    stylers: [{
-                                            saturation: -90
-                                        },
-                                        {
-                                            lightness: 50
-                                        }
-                                    ]
-                                },
-                                {
-                                    elementType: 'labels.text.fill',
-                                    stylers: [{
-                                        color: '#ccdee9'
-                                    }]
-                                }
-                            ];
-                            var map = new google.maps.Map(document.getElementById('map'), {
-                                center: {
-                                    lat: -31.197,
-                                    lng: 150.744
-                                },
-                                zoom: 9,
-                                styles: grayStyles,
-                                scrollwheel: false
-                            });
-                        }
-                    </script>
-                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&amp;callback=initMap">
-                    </script>
-    
-                </div>
-    
-    
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="contact-title">Get in Touch</h2>
-                    </div>
-                    <div class="col-lg-8">
-                        <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder=" Name"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder="Enter Subject">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group mt-3">
-                                <button type="submit" class="button button-contactForm boxed-btn">Send</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-lg-3 offset-lg-1">
-                        <div class="media contact-info">
-                            <span class="contact-info__icon"><i class="ti-home"></i></span>
-                            <div class="media-body">
-                                <h3>Buttonwood, California.</h3>
-                                <p>Rosemead, CA 91770</p>
-                            </div>
+    <!-- popular_causes_area_start  -->
+    <div class="popular_causes_area pt-120 cause_details ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="single_cause">
+                        <div class="thumb">
+                            <img src="img/causes/large_img.png" alt="">
                         </div>
-                        <div class="media contact-info">
-                            <span class="contact-info__icon"><i class="ti-tablet"></i></span>
-                            <div class="media-body">
-                                <h3>+1 253 565 2365</h3>
-                                <p>Mon to Fri 9am to 6pm</p>
+                        <div class="causes_content">
+                            <div class="custom_progress_bar">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="progres_count">
+                                            1.3%
+                                        </span>
+                                    </div>
+                                  </div>
                             </div>
-                        </div>
-                        <div class="media contact-info">
-                            <span class="contact-info__icon"><i class="ti-email"></i></span>
-                            <div class="media-body">
-                                <h3>support@colorlib.com</h3>
-                                <p>Send us your query anytime!</p>
+                            <div class="balance d-flex justify-content-between align-items-center">
+                                <span>Raised: Ksh 1000.00 </span>
+                                <span>Goal: Ksh 33000.00 </span>
                             </div>
+                            <h4>Let's promote Literacy</h4>
+                            <p>In today's interconnected world, access to quality education remains a cornerstone of social progress and individual empowerment.</p>
+                         <h4> Why Donate towards Education</h4>
+                            <p> Empowering Through Knowledge: Education donations directly empower individuals by providing access to learning resources, scholarships, and educational infrastructure. By supporting schools, libraries, and educational programs, donors help unlock the potential of students who might otherwise lack access to essential learning opportunities. </p>
+
+                            <p>Promoting Lifelong Learning: Investing in education fosters a culture of lifelong learning and personal growth. By donating educational materials, technology, and mentorship programs, donors inspire individuals to pursue knowledge, develop critical thinking skills, and adapt to evolving societal needs.  </p>
+
+                            <p></p>
+
+<p></p>
+                            
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    <!-- ================ contact section end ================= -->
-    
+        </div>
+    </div>
+    <!-- popular_causes_area_end  -->
+
+
+ 
+            <div class="row">
+                <div class="col-12">
+                    <div class="donate_now_btn text-center">
+                        <a href="{{ route('category.create')}}"  class="boxed-btn4">Donate Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <!-- footer_start  -->
     <footer class="footer">
@@ -314,7 +246,7 @@
                                 Services
                             </h3>
                             <ul class="links">
-                                <li><a href="{{ route('cause')}}">Donate</a></li>
+                            <li><a href="{{ route('cause')}}">Donate</a></li>
                                 
                                 <li><a href="{{ route('cause')}}">Fundraise</a></li>
                                 <li><a href="{{ route('cause')}}">Volunteer</a></li>
@@ -383,56 +315,48 @@
                     <div class="bordered_1px "></div>
                     <div class="col-xl-12">
                         <p class="copy_right text-center">
-                           
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </p>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- footer_end  -->
-    
-        <!-- JS here -->
-        <script src="{{ asset('assets/vendor/js/vendor/modernizr-3.5.0.min.js') }}"></script>
-    <script src="{{ asset('assets/vendor/js/vendor/jquery-1.12.4.min.js') }}"></script>
-    <script src="{{ asset('assets/js/popper.min.js',true) }}"></script>
-    <script src="{{ asset('assets/js/bootstrap.min.js',true) }}"></script>
-    <script src="{{ asset('assets/js/owl.carousel.min.js',true) }}"></script>
-    <script src="{{ asset('assets/js/isotope.pkgd.min.js',true) }}"></script>
-    <script src="{{ asset('assets/js/ajax-form.js',true) }}"></script>
-    <script src="{{ asset('assets/js/waypoints.min.js',true) }}"></script>
-    <script src="{{ asset('assets/js/jquery.counterup.min.js',true) }}"></script>
-    <script src="{{ asset('assets/js/imagesloaded.pkgd.min.js',true) }}"></script>
-    <script src="{{ asset('assets/js/scrollIt.js',true) }}"></script>
-    <script src="{{ asset('assets/js/jquery.scrollUp.min.js',true) }}"></script>
-    <script src="{{ asset('assets/js/wow.min.js',true) }}"></script>
-    <script src="{{ asset('assets/js/nice-select.min.js',true) }}"></script>
-    <script src="{{ asset('assets/js/jquery.slicknav.min.js',true) }}"></script>
-    <script src="{{ asset('assets/js/jquery.magnific-popup.min.js',true) }}"></script>
-    <script src="{{ asset('assets/js/plugins.js',true) }}"></script>
-    <script src="{{ asset('assets/js/gijgo.min.js',true) }}"></script>
-    <script src="{{ asset('assets/js/contact.js',true) }}"></script>
-    <script src="{{ asset('assets/js/jquery.ajaxchimp.min.js',true) }}"></script>
-    <script src="{{ asset('assets/js/jquery.form.js',true) }}"></script>
-    <script src="{{ asset('assets/js/jquery.validate.min.js',true) }}"></script>
-    <script src="{{ asset('assets/js/mail-script.js',true) }}"></script>
-    <script src="{{ asset('assets/js/main.js',true) }}"></script>
-        <script>
-            $('#datepicker').datepicker({
-                iconsLibrary: 'fontawesome',
-                icons: {
-                 rightIcon: '<span class="fa fa-caret-down"></span>'
-             }
-            });
-            $('#datepicker2').datepicker({
-                iconsLibrary: 'fontawesome',
-                icons: {
-                 rightIcon: '<span class="fa fa-caret-down"></span>'
-             }
-    
-            });
-        </script>
-    </body>
-    
-    </html>
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+  
+  
+  </p>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- footer_end  -->
+
+<!-- link that opens popup -->
+
+<!-- JS here -->
+
+<script src="{{ asset('assets/vendor/js/vendor/modernizr-3.5.0.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/js/vendor/jquery-1.12.4.min.js') }}"></script>
+<script src="{{ asset('assets/js/popper.min.js',true) }}"></script>
+<script src="{{ asset('assets/js/bootstrap.min.js',true) }}"></script>
+<script src="{{ asset('assets/js/owl.carousel.min.js',true) }}"></script>
+<script src="{{ asset('assets/js/isotope.pkgd.min.js',true) }}"></script>
+<script src="{{ asset('assets/js/ajax-form.js',true) }}"></script>
+<script src="{{ asset('assets/js/waypoints.min.js',true) }}"></script>
+<script src="{{ asset('assets/js/jquery.counterup.min.js',true) }}"></script>
+<script src="{{ asset('assets/js/imagesloaded.pkgd.min.js',true) }}"></script>
+<script src="{{ asset('assets/js/scrollIt.js',true) }}"></script>
+<script src="{{ asset('assets/js/jquery.scrollUp.min.js',true) }}"></script>
+<script src="{{ asset('assets/js/wow.min.js',true) }}"></script>
+<script src="{{ asset('assets/js/nice-select.min.js',true) }}"></script>
+<script src="{{ asset('assets/js/jquery.slicknav.min.js',true) }}"></script>
+<script src="{{ asset('assets/js/jquery.magnific-popup.min.js',true) }}"></script>
+<script src="{{ asset('assets/js/plugins.js',true) }}"></script>
+<script src="{{ asset('assets/js/gijgo.min.js',true) }}"></script>
+<script src="{{ asset('assets/js/contact.js',true) }}"></script>
+<script src="{{ asset('assets/js/jquery.ajaxchimp.min.js',true) }}"></script>
+<script src="{{ asset('assets/js/jquery.form.js',true) }}"></script>
+<script src="{{ asset('assets/js/jquery.validate.min.js',true) }}"></script>
+<script src="{{ asset('assets/js/mail-script.js',true) }}"></script>
+<script src="{{ asset('assets/js/main.js',true) }}"></script>
+</body>
+</html>
+
+</body>
+
+</html>
