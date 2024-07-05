@@ -9,11 +9,14 @@ class Category extends Model
 {
     use HasFactory;
 
-    protected $table = 'categories';
-
     protected $fillable = [
-        'name',
+        'item', // Add other fillable fields as needed
         'description',
-        'status'
+        'location'
+        // Add more fields here as per your application's requirements
     ];
+
+   
 }
+
+
