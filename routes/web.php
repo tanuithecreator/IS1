@@ -11,9 +11,6 @@ use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\DetailsController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\VolunteerController;
-use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\DonationsController;
-
 
 
 
@@ -74,8 +71,3 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
-
-Route::get('admin/dashboard', [HomeController::class, 'index'])->middleware(['auth', 'verified', 'admin']);
-
-Route::resource('category', CategoryController::class);
-Route::resource('donation', DonationsController::class);
