@@ -41,6 +41,66 @@ To run this project you will need to install the following dependancies
 - Admin panel to manage donations and users
 - Reporting and analytics for tracking donations
 
+## Project Structure
+Project Root
+│
+├─── app
+│   ├─── Http
+│   │   └─── Controllers
+│   │       ├── AboutController.php
+│   │       ├── AdminController.php
+│   │       ├── BlogController.php
+│   │       ├── CategoryController.php
+│   │       ├── CauseController.php
+│   │       ├── ContactController.php
+│   │       ├── Controller.php
+│   │       ├── DetailsController.php
+│   │       ├── HomeController.php
+│   │       └── VolunteerController.php
+│   ├─── Models
+│   ├─── Providers
+│   └─── View
+│
+├─── bootstrap
+│
+├─── config
+│
+├─── database
+│
+├─── public
+│
+├─── resources
+│   ├─── views
+│   │   ├── About.blade.php
+│   │   ├── Blog.blade.php
+│   │   ├── Cause.blade.php
+│   │   ├── contact.blade.php
+│   │   ├── dashboard.blade.php
+│   │   ├── home.blade.php
+│   │   ├── navigation-menu.blade.php
+│   │   ├── policy.blade.php
+│   │   ├── terms.blade.php
+│   │   │
+│   │   ├─── Category
+│   │   ├─── components
+│   │   ├─── Details
+│   │   ├─── emails
+│   │   ├─── layouts
+│   │   ├─── profile
+│   │   └─── Volunteer
+│
+├─── routes
+│
+├─── storage
+│
+├─── tests
+│
+├─── .editorconfig
+├─── .env.example
+├─── .gitattributes
+├─── .gitignore
+└─── README.md
+
 ## License
 This project is licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
