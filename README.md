@@ -41,6 +41,16 @@ To run this project you will need to install the following dependancies
 - Admin panel to manage donations and users
 - Reporting and analytics for tracking donations
 
+## License
+This project is licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+##  Contact
+For any inquiries or feedback, please reach out to:
+
+- Julian Tanui - [Julian](mailto:juliankipkoskei@gmail.com)
+- Jeremy Chege - [Jeremy](mailto:jeremychege@gmail.com)
+
 ## Project Structure
 Project Root
 ```plaintext
@@ -101,12 +111,8 @@ Project Root
 ├── storage
 │
 └── tests
-## License
-This project is licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 
-##  Contact
-For any inquiries or feedback, please reach out to:
 
-- Julian Tanui - [Julian](mailto:juliankipkoskei@gmail.com)
-- Jeremy Chege - [Jeremy](mailto:jeremychege@gmail.com)
+
+
