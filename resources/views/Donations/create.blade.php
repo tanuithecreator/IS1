@@ -161,12 +161,12 @@
             <label for="description">Description:</label><br>
             <input type="text" id="description" name="description">
             <br><br>
-            <label for="Quantity">Quantity:</label><br>
-            <input type="text" id="Quanity" name="Quantity">
-            <br><br>
             <label for="location">Location:</label><br>
             <input type="text" id="location" name="location">
-            <br>
+            <br><br>
+            <label for="quantity">Quantity:</label><br>
+            <input type="text" id="quantity" name="quantity">
+            <br><br>
             <button type="submit" onclick="showSuccess()">Donate now</button>
         </form>
     </div>

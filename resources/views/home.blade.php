@@ -38,8 +38,7 @@
                         <div class="col-xl-6 col-md-12 col-lg-8">
                             <div class="short_contact_list">
                                 <ul>
-                                    <li><a href=""> <i class="fa fa-phone"></i> +254 717302004</a></li>
-                                    <li><a href=""> <i class="fa fa-envelope"></i>FoodShare@gmail.com</a></li>
+                               
                                 </ul>
                             </div>
                         </div>
@@ -107,11 +106,7 @@
                         @endif</ul>
                         </div>
                                 </nav>
-                                <div class="Appointment">
-                                    <div class="book_btn d-none d-lg-block">
-                                        <a data-scroll-nav='1' href="#giveMoney">Make a Donation</a>
-                                    </div>
-                                </div>
+                              
                             </div>
                         </div>
                         <div class="col-12">

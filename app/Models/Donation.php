@@ -14,8 +14,9 @@ class Donation extends Model
     protected $fillable = [
         'item', // Add other fillable fields as needed
         'description',
-        'Quantity',
-        'location'
+        'location',
+        'quantity',
+       
         // Add more fields here as per your application's requirements
     ];
 

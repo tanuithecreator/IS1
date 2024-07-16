@@ -120,7 +120,10 @@
             <br><br>
             <label for="location">Location:</label><br>
             <input type="text" id="location" name="location" value="{{$donation -> location}}">
-            <br>
+            <br><br>
+            <label for="location">Quantity:</label><br>
+            <input type="text" id="quantity" name="quantity" value="{{$donation -> quantity}}">
+            <br><br>
 
             <button type="submit">Update Donation</button>
         </form>

@@ -116,8 +116,8 @@
                         <tr>
                             <td>{{ $donation->item }}</td>
                             <td>{{ $donation->description }}</td>
-                            <td>{{ $donation->quantity }}</td>
                             <td>{{ $donation->location }}</td>
+                            <td>{{ $donation->quantity }}</td>
                             <td>{{ $donation->created_at->format('Y-m-d H:i') }}</td>
                             <td>
                                 <a href="{{ route('donations.edit', ['donation' => $donation->donationsid]) }}" class="edit-button">Edit</a>

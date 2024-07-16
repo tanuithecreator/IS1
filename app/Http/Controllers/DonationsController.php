@@ -45,8 +45,8 @@ class DonationsController extends Controller
         $validatedData = $request->validate([
             'item' => 'required|max:255',
             'description' => 'nullable',
-            'quantity' => 'required|max:255',
             'location' => 'nullable|max:255',
+            'quantity' => 'required|max:255',
         ]);
 
         Donation::create($validatedData);
@@ -67,8 +67,8 @@ class DonationsController extends Controller
         $validatedData = $request->validate([
             'item' => 'required|max:255',
             'description' => 'nullable',
-            'quantity' => 'nullable|max:255',
             'location' => 'nullable|max:255',
+            'quantity' => 'nullable|max:255',
             
         ]);
 

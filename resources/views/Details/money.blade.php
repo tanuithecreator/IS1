@@ -27,14 +27,14 @@
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css',true) }}">
 
 
+
 </head>
 
 <body>
    
 
 
-    <!-- header-start -->
-    <header>
+<header>
         <div class="header-area ">
             <div class="header-top_area">
                 <div class="container-fluid">
@@ -42,8 +42,7 @@
                         <div class="col-xl-6 col-md-12 col-lg-8">
                             <div class="short_contact_list">
                                 <ul>
-                                    <li><a href=""> <i class="fa fa-phone"></i> +254 717302004</a></li>
-                                    <li><a href=""> <i class="fa fa-envelope"></i>FoodShare@gmail.com</a></li>
+                                    
                                 </ul>
                             </div>
                         </div>
@@ -62,11 +61,21 @@
                         <div class="col-xl-9 col-lg-9">
                             <div class="main-menu">
                                 <nav>
-                                <ul id="navigation">
+                                    <ul id="navigation">
                                         <li><a href="{{ route('home') }}" > home</a></li>
-                                       
+                                        
+                                                
+                                           
+                                        
+                                        
+                                            
                                                 
                                          <li><a href="{{ route('cause') }}" >Cause</a></li>
+                                         <li><a href="{{ route('donations.index') }}" >View Donations</a></li>
+                                            
+                                        
+                                    
+                                    
                                    
                 
                                    
@@ -74,12 +83,12 @@
                         @if (Route::has('login'))
                              
                                 @auth
-                                 <li>   <a
-                                        href="{{ url('/dashboard') }}"
-                                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20]"
-                                    >
-                                        Dashboard
-                                    </a></li>
+                                 <li>   
+                                 <x-app-layout>
+
+                                </x-app-layout>
+
+                                 </li>
                                 @else
                                   <li> <a
                                         href="{{ route('login') }}"
@@ -101,11 +110,7 @@
                         @endif</ul>
                         </div>
                                 </nav>
-                                <div class="Appointment">
-                                    <div class="book_btn d-none d-lg-block">
-                                        <a data-scroll-nav='1' href="#giveMoney">Make a Donation</a>
-                                    </div>
-                                </div>
+                              
                             </div>
                         </div>
                         <div class="col-12">
