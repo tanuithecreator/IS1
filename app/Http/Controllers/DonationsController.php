@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Donation;
+use App\Models\Recipient;
 use Illuminate\Http\Request;
 
 class DonationsController extends Controller
@@ -87,4 +88,35 @@ class DonationsController extends Controller
    {
     return view('donations.mpesa');
    }
+  /* public function indexxx(Request $request)
+    {
+        $query = Donation::query();
+
+    
+        if ($request->has('location')) {
+            $query->where('location', 'like', '%' . $request->input('location') . '%');
+        }
+    
+        if ($request->has('search')) {
+            $query->where(function ($q) use ($request) {
+                $q->where('description', 'like', '%' . $request->input('search') . '%')
+                  ->orWhere('item', 'like', '%' . $request->input('search') . '%');
+            });
+        }
+    
+        $donations = $query->get();
+       // dd($donations); 
+        return view('recipients.index', compact('donations'));
+    }
+    
+
+    public function claim(Request $request, $donationsid)
+    {
+        $donation = Donation::findOrFail($donationsid);
+        $recipient = Auth::user()->recipient; // Assuming the user is authenticated and is a recipient
+
+        $donation->recipients()->attach($recipient->recipient_id);
+
+        return redirect()->route('recipients.index')->with('success', 'Donation claimed successfully!');
+    }*/
 }

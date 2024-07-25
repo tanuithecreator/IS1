@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "backpack/basset",
-            "version": "1.3.4",
+            "version": "1.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Backpack/basset.git",
-                "reference": "dc420ca65822ccda5018f2eb91b07b0842ad711d"
+                "reference": "ffa775cab74d960bcbfa66741b1c88607680c45d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Backpack/basset/zipball/dc420ca65822ccda5018f2eb91b07b0842ad711d",
-                "reference": "dc420ca65822ccda5018f2eb91b07b0842ad711d",
+                "url": "https://api.github.com/repos/Laravel-Backpack/basset/zipball/ffa775cab74d960bcbfa66741b1c88607680c45d",
+                "reference": "ffa775cab74d960bcbfa66741b1c88607680c45d",
                 "shasum": ""
             },
             "require": {
@@ -76,22 +76,22 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Backpack/basset/issues",
-                "source": "https://github.com/Laravel-Backpack/basset/tree/1.3.4"
+                "source": "https://github.com/Laravel-Backpack/basset/tree/1.3.5"
             },
-            "time": "2024-05-01T13:44:21+00:00"
+            "time": "2024-07-16T16:33:26+00:00"
         },
         {
             "name": "backpack/crud",
-            "version": "6.7.17",
+            "version": "6.7.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Backpack/CRUD.git",
-                "reference": "761733f009e8aeec7d3f023408e556ae3921b05d"
+                "reference": "6ec392cd80141d13663b3f4a7be1741f3ba65863"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Backpack/CRUD/zipball/761733f009e8aeec7d3f023408e556ae3921b05d",
-                "reference": "761733f009e8aeec7d3f023408e556ae3921b05d",
+                "url": "https://api.github.com/repos/Laravel-Backpack/CRUD/zipball/6ec392cd80141d13663b3f4a7be1741f3ba65863",
+                "reference": "6ec392cd80141d13663b3f4a7be1741f3ba65863",
                 "shasum": ""
             },
             "require": {
@@ -170,22 +170,22 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Backpack/CRUD/issues",
-                "source": "https://github.com/Laravel-Backpack/CRUD/tree/6.7.17"
+                "source": "https://github.com/Laravel-Backpack/CRUD/tree/6.7.18"
             },
-            "time": "2024-06-19T15:28:22+00:00"
+            "time": "2024-07-15T09:43:49+00:00"
         },
         {
             "name": "backpack/theme-coreuiv4",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Backpack/theme-coreuiv4.git",
-                "reference": "694f4994f2144a648d0b5ca1df739ebb9cb0554d"
+                "reference": "c6f2befe9c23d1f05b76367c009f0b935008c811"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Backpack/theme-coreuiv4/zipball/694f4994f2144a648d0b5ca1df739ebb9cb0554d",
-                "reference": "694f4994f2144a648d0b5ca1df739ebb9cb0554d",
+                "url": "https://api.github.com/repos/Laravel-Backpack/theme-coreuiv4/zipball/c6f2befe9c23d1f05b76367c009f0b935008c811",
+                "reference": "c6f2befe9c23d1f05b76367c009f0b935008c811",
                 "shasum": ""
             },
             "require": {
@@ -240,9 +240,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Backpack/theme-coreuiv4/issues",
-                "source": "https://github.com/Laravel-Backpack/theme-coreuiv4/tree/1.1.1"
+                "source": "https://github.com/Laravel-Backpack/theme-coreuiv4/tree/1.1.2"
             },
-            "time": "2023-09-19T13:39:54+00:00"
+            "time": "2024-07-15T07:58:20+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",

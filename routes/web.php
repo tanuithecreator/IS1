@@ -8,7 +8,7 @@ use App\Http\Controllers\DetailsController;
 use App\Http\Controllers\VolunteerController;
 use App\Http\Controllers\DonationsController;
 use App\Http\Controllers\PaymentController;
-
+use App\Http\Controllers\RecipientController;
 
 
 
@@ -36,6 +36,10 @@ Route::post('/volunteer/store', [VolunteerController::class, 'store'])->name('vo
 Route::post('/payments/response', [PaymentController::class, 'callback'])->withoutMiddleware(['auth', LockScreenMiddleware::class,'auth:sanctum',config('jetstream.auth_session'),'verified',])->name('mpesa.callback');
 Route::post('/payments/store', [PaymentController::class, 'storePayment'])->name('payment.store');
 
+Route::middleware(['auth'])->group(function () {
+    Route::get('/recipients', [RecipientController::class, 'index'])->name('recipients.index');
+    Route::post('/recipients/claim/{id}', [RecipientController::class, 'claim'])->name('recipients.claim');
+});
 
 
 

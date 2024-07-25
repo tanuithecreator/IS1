@@ -36,6 +36,12 @@ return [
             'url'  => env('APP_URL').'/uploads',
 
         ],
+        'basset' => [
+            'driver' => 'local',
+            'root' => storage_path('basset'),
+            'url' => env('APP_URL') . '/basset',
+            'visibility' => 'public',
+        ],
         
         'local' => [
             'driver' => 'local',

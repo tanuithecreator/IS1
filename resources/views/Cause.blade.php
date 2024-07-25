@@ -13,18 +13,18 @@
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/themify-icons.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/nice-select.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/flaticon.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/gijgo.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/animate.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/slicknav.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/responsive.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/nice-select.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/gijgo.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/slicknav.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
 
 </head>
 
@@ -54,7 +54,7 @@
                         <div class="col-xl-3 col-lg-3">
                             <div class="logo">
                                 <a href="{{ route('home') }}" >
-                                    <img src="img/logo.png" alt="">
+                                   
                                 </a>
                             </div>
                         </div>
@@ -169,7 +169,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single_cause">
                         <div class="thumb">
-                            <img src="{{asset('assets/images/causes/2.png')}}" alt="">
+                            <img src="{{asset('assets/images/causes/3.png')}}"alt="">
                         </div>
                         <div class="causes_content">
                             <div class="custom_progress_bar">
@@ -194,7 +194,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single_cause">
                         <div class="thumb">
-                            <img src="{{asset('assets/images/causes/3.png')}}"alt="">
+                            <img src="{{asset('assets/images/causes/2.png')}}"alt="">
                         </div>
                         <div class="causes_content">
                             <div class="custom_progress_bar">
@@ -273,7 +273,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single_cause">
                         <div class="thumb">
-                        <img src="{{ asset('assets/images/help/1.png') }}" alt="">
+                        <img src="{{ asset('assets/images/causes/ksh.jpg') }}" alt="">
                         </div>
                         <div class="causes_content">
                             <div class="custom_progress_bar">

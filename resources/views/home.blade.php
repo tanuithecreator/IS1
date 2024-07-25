@@ -14,18 +14,18 @@
 
     <!-- CSS here -->
 
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/themify-icons.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/nice-select.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/flaticon.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/gijgo.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/animate.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/slicknav.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/responsive.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/nice-select.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/gijgo.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/slicknav.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
 
 
 <body>
@@ -128,7 +128,7 @@
                         <div class="slider_text ">
                             <span></span>
                             <h3>Welcome to FoodShare:Fighting Hunger, One Meal at a Time</h3>
-                            <p>Join us in our mission to ensure that everyone has access to the nourishment they deserve.</p>
+                            <p>Join us in our mission to ensure that everyone has access to the needs they deserve.</p>
                             <a href="{{ route('cause') }}" class="boxed-btn3">Learn More
                             </a>
                         </div>
@@ -213,7 +213,8 @@
                             <h3> <span>Watch Our Latest  </span><br>
                                 Activities</h3>
                         </div>
-                        <p class="para_1">At FoodShare, our activities are centered around creating a seamless and effective platform for food donation to combat food waste and support those in need. We enable individuals and businesses with surplus food to list their donations through our user-friendly web application, making it accessible for recipients like charities, food banks, and needy families to search and request these donations. Our system supports registration, donation management, and secure communication between donors and recipients, ensuring transparency and efficiency. Admins oversee the platform, maintaining user accounts, monitoring activities, and generating insightful reports to continually enhance our service. Through these efforts, we foster a community-driven approach to reducing food waste and improving food security, connecting generous donors with recipients who need it the most.</p>
+                        <p class="para_1">
+Welcome to FoodShare, a dedicated platform committed to enhancing community welfare through the power of giving. At FoodShare, we believe in creating meaningful connections between generous donors and individuals or organizations in need, beyond just food items. Our platform facilitates seamless contributions of various resources, ranging from essential goods to financial support, ensuring that every donation makes a significant impact. With a focus on transparency and efficiency, FoodShare empowers users to participate in sustainable community support initiatives effortlessly. Join our growing community of compassionate individuals and organizations, and together, let's make a lasting difference in the lives of those who need it most.</p>
                         <a href="{{route('cause')}}" data-scroll-nav='1' class="boxed-btn4">Donate Now</a>
                     </div>
                 </div>

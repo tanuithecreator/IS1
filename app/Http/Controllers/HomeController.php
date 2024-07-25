@@ -17,7 +17,7 @@ class HomeController extends Controller
         if (Auth::user()->usertype == 'user') {
             return view ('home');;
         } else {
-            return view('home');
+            return redirect()->route('recipients.index');
         }
     } else {
         // User is not authenticated, handle this case (e.g., redirect to login)

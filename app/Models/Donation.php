@@ -2,13 +2,13 @@
 
 namespace App\Models;
 
-use Backpack\CRUD\app\Models\Traits\CrudTrait;
+//use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Donation extends Model
 {
-    use CrudTrait;
+   // use CrudTrait;
     use HasFactory;
 
     protected $fillable = [
@@ -22,6 +22,10 @@ class Donation extends Model
 
     protected $primaryKey = 'donationsid';
 
+    public function recipients()
+    {
+        return $this->belongsToMany(Recipient::class, 'donation_recipient','donationsid','recipient_id');
+    }
 
    
 }

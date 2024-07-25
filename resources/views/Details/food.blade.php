@@ -13,18 +13,18 @@
  
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/themify-icons.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/nice-select.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/flaticon.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/gijgo.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/animate.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/slicknav.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css',true) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/responsive.css',true) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/nice-select.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/gijgo.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/slicknav.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
 
 
 </head>
